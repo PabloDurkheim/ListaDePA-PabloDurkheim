@@ -1,0 +1,18 @@
+int i=3,j=5;
+int *p, *q;
+p = &i;
+q = &j;
+
+p == &i; >>> p foi definido como um ponteiro (antes), e recebeu o endereço 
+da variável i, logo, o conteúdo de p é 3 que é o valor que está 
+armazenado em i.
+
+*p - *q; >>> o conteúdo de p é 3 e o de q é -5, pois foram armazenados os
+endereços de i e j nas respectivas variavéis, logo o resultado é -2.
+
+**&p; >>> eu entendi o seguinte: &p é o endereço do ponteiro p, que é o mesmo de i,
+então &p = &i, *&p é o conteúdo que está no endereço de i, que é mesmo de p,
+e **&p é o conteúdo de p já que *&p é p. O resultado é 3. 
+
+3 - *p/(*q) + 7; >>> a divisão dos conteúdos de p e q resulta em zero, já que são 
+do tipo inteiros e fica 3/7, logo, o resultado é 3 - 0 + 7 = 10

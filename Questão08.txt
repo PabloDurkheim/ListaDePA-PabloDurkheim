@@ -1,0 +1,20 @@
+//percorre pelo conteúdo(recupera) de vet
+
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ",*(vet+i));
+  }
+}
+
+//percorre unidades de 4 bytes na mémoria em vet, pois são do tipo int
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i);
+  }
+}
+
+
